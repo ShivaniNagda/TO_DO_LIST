@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(6, 1, 37);
+  color: #f3f3f3;
+  padding: 3px;
+}
+/* Body Styles */
+body {
+  border: 2px solid whitesmoke;
+  padding: 3vh;
+  min-height: 100vh;
+  max-height: fit-content;
+  background: -moz-repeating-radial-gradient(
+    rgb(4, 4, 187),
+    rgb(11, 6, 43),
+    rgb(25, 25, 90)
+  );
+}
+/* logo Styles */
+.logo {
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+  border-radius: 50px;
+  margin: 5px;
+}
+/* Container for input and add button */
+#container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 1vw 0vw;
+}
+h1 {
+  text-align: center;
+  background: linear-gradient(
+    360deg,
+    white,
+    rgb(157, 180, 180),
+    cyan,
+    rgb(151, 151, 250),
+    gray
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.heading {
+  font-weight: 900;
+}
+.add-task {
+  width: 70vw;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 3px;
+  margin-left: 3vw;
+}
+.add-btn {
+  width: 100px;
+  padding: 8px;
+  border: 2px dashed rgb(52, 204, 218);
+  margin: 1vw;
+  margin-left: 3vw;
+  height: fit-content;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: rgb(32, 115, 123);
+  color: #f3f3f3;
+  border: 2px solid wheat;
+  box-shadow: inset 2px 2px 2px rgb(172, 164, 164);
+}
+.add-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(225, 6, 57, 0.2);
+  background-color: rgb(165, 252, 253);
+  transition: all 1s ease-in-out;
+}
+
+#total-tasks {
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  margin-left: 3vw;
+  color: gray;
+}
+
+/* Created To do list  */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  background-color: #140f5c;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  width: 70vw;
+  margin-left: 3vw;
+}
+ul li:hover {
+  background: #f3f3f3;
+  color: black;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+}
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 28px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.delete {
+  color: white;
+  background-color: aliceblue;
+  padding: 4px;
+}
+/* Footer  */
+footer {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 47vh;
+  background-color: none;
+}
